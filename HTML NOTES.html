@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICS</title>
+</head>
+<body>
+   <h1 style="color:rgb(98, 3, 3)"><u>HTML PAGE FORMAT</u></h1>
+   <ul>
+    <li><b>!</b> - Boiler plate</li>
+    <li><b>Comments</b> : < !--(contents) -- ></li>
+    <li><b>Main tag : </b> < html> < / html > </li>
+   </ul>
+   <hr/>
+   <h2 style="color:rgb(2, 123, 30)"><u>TWO PARTS</u> : Head , Body</h2>
+   <ol>
+    <li><b>HEAD : </b> < title>< /title> - <b>Name of the webpage</b></li>
+    <li><b>BODY : </b></li>
+    <ol type ="a">
+        <li><b>Header</b> : < header > < /header>  </li>
+        <br/>
+        <li><b>Main</b> : < main > < /main> - 
+        <ul>
+            <li><b>article - </b>  < article > < /article></li>
+            <li><b>section - </b>  < section > < /section></li>
+        </ul>
+        </li>
+        <br/>
+        <li><b>Footer</b> : < footer > < /footer> </li>
+    </ol>
+    </ol>
+    <hr/>
+   <h2 style="color:rgb(2, 123, 30)"><u>BASIC TAGS</u></h2>
+   <ol>
+    <li><b>Single Tag -</b> < tagname/>
+    </li>
+    <li><b>Double Tag - </b>< tagname>  < /tagname></li>
+   </ol>
+   <table>
+    <thead>
+        <tr>
+            <th><u>TAGS</u></th>
+            <th><u>DESCRIPTION</u></th>
+        </tr>
+    </thead>
+    <br/>
+    <tbody>
+        <tr>
+            <td><b>< h1>< /h1> to < h6> < /h6></b>  </td>
+            <td>Headings tag</td>
+        </tr>
+        <tr>
+            <td><b>< p> < /p> </b>  </td>
+            <td>Paragraph tag</td>
+        </tr>
+        <tr>
+            <td><b>< b> < /b> </b>  </td>
+            <td>Bold tag</td>
+        </tr>
+        <tr>
+            <td><b>< i> < /i> </b>  </td>
+            <td>Italic tag</td>
+        </tr>
+        <tr>
+            <td><b>< u> < /u> </b>  </td>
+            <td>Underline tag</td>
+        </tr>
+        <tr>
+            <td><b>< br/></b>  </td>
+            <td>Breaks the line / moves content to the next line</td>
+        </tr>
+        <tr>
+            <td><b>< hr/></b>  </td>
+            <td>Horizontal rule -draws horizontal line</td>
+        </tr>
+        <tr>
+            <td><b>< small> < /small> </b>  </td>
+            <td>Small tag</td>
+        </tr>
+        <tr>
+            <td><b>< big> < /big> </b>  </td>
+            <td>Big tag</td>
+        </tr>
+        <tr>
+            <td><b>< sub> < /sub> </b>  </td>
+            <td>Subscript tag</td>
+        </tr>
+        <tr>
+            <td><b>< sup> < /sup>  </b>  </td>
+            <td>Superscript tag</td>
+        </tr>
+    </tbody>
+   </table>
+   <hr/>
+   <h2 style="color:rgb(2, 123, 30)"><u>STYLE </u></h2>
+   <p style="color:rgb(114, 14, 229); background-color: pink;"><b>style="attribute1=value; attribute2=value;"</b></p>
+   <p><i>Written inside the tags</i></p>
+   <b><p>< body style = " background-color : pink; " > </p>
+   <p>
+    < h1 style = "color : blue; background-color : blue "> < /h1 > </p>
+    <p>< /body></p></b>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>LINKS</u></h2>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>DOUBLE TAG - < a href = "link" > text to represent link < /a></a></b></p>
+    <p>Links can be three types- </p>
+    <ul>
+        <li>External links - direct link</li>
+        <li>Internal file from same directory of current - direct link</li>
+        <li>Internal file from diff directory - dirname/filename</li>
+    </ul>
+    <p><i>By default,when links are clicked,they open in same web page.To change this and allow opening in new tab- target="_blank"</i></p>
+    <p><i>When link is opened for first time - blue, already opened/clicked - purple </i></p>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>IMAGES</u></h2>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>Single tag - < img src="image link" alt="text if image fail to open" / > </b></p>
+    <ul>
+        <li><u><b>src-</b></u> link of the image</li>
+        <li><u><b>alt-</b></u> the text displayed if image failed to display else not displayed</li>
+        <li><u><b>height,width-</b> </u>resize the image</li>
+    </ul>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>VIDEOS</u></h2>
+    <p><b>INTERNAL VIDEOS</b></p>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>Double tag - < video src="video link" controls  >text < /video> </image></b></p>
+    <ul>
+        <li><u><b>src-</b></u> link of the video</li>
+        <li><u><b>text-</b></u> the text displayed if video failed to display else not displayed</li>
+        <li><u><b>height,width-</b> </u>resize the video</li>
+        <li><u><b>controls-</b></u> if not used,the video cannot be displayed else is like image</li>
+        <li><u><b>poster-</b></u> link of the image for thumbnail</li>
+        <li><u><b>autoplay-</b></u> autoplays video</li>
+        <li><u><b>loop-</b></u> loops video</li>
+    </ul>
+    <p><b>YOUTUBE VIDEOS</b></p>
+    <p>Paste the video link with <b>iframe link</b></p>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>LISTS - Ordered , Unordered</u></h2>
+    <ol>
+        <li><h3><b>UNORDERED LISTS : </b></h3>
+        <p style="color:rgb(114, 14, 229); background-color: pink;"><b>< ul> <br/> < li> val1 < /li> <br/>< li> val2 < /li><br/>< /ul></b></p>
+
+        </li>
+        <li><h3><b>ORDERED LISTS : </b></h3>
+        <p style="color:rgb(114, 14, 229); background-color: pink;"><b>< ol type="1(default) / a / A / I / i "> <br/> < li> val1 < /li> <br/>< li> val2 < /li><br/>< /ol></b></p></li>
+    </ol>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b></b></p>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>TABLES</u></h2>
+    <p>
+        <b><u>TWO SECTIONS - </u></b>
+        <ol>
+            <li><b>thead</b> - TABLE HEADER (section containing header rows of a table.)     
+            </li>
+            <li><b>tbody</b> - TABLE BODY (section containing data in rows of a table.)</li>
+        </ol>
+        <b><u>TAGS FOR ROWS AND COLUMNS - </u></b>
+        <ol>
+            <li><b>tr</b> - TABLE ROW (Individual row with columns)     
+            </li>
+            <li><b>th (Table Header)</b> - TABLE HEAD (Title of each column)</li>
+            <li><b>td (Table Body)</b> - TABLE DATA (data of each column)</li>
+        </ol>
+
+    </p>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>
+        < table> <br/> < thead>      <i style="color:black">Table Header-Section with row of titles</i> <br/><br/> < tr><i style="color:black">Table rows - defining columns of each row</i><br/><br/> < th><i style="color:black">Table Head-Title of col 1</i> < /th> <br/><br/>< th><i style="color:black">Table Header-Title of col 2</i> < /th><br/>.<br/>.<br/> <br/>< /tr><br/><br/>< /thead>
+    <br/>< tbody><i style="color:black">Table Body-Section with rows of data</i><br/><br/> < tr> <br/><br/> < td><i style="color:black">Table Data-Data of col 1</i> < /td><br/><br/> < td><i style="color:black">Table Data-Data of col 1</i> < /td><br/><br/>.<br/>.<br/><br/>< /tr><br/><br/>< /tbody><br/>< /table>
+
+
+    </b></p>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>DISPLAY TYPES - div,span</u></h2>
+
+    <ol>
+        <li><b>Inline element - span</b>
+                <p style="color:rgb(114, 14, 229); background-color: pink;"><b>< span> < /span></b></p>
+
+            <p>Displays the content in same line</p>
+            <a href="@">Baba</a>
+            <a href="a">Kesari</a>
+        </li>
+        <br/>
+        <li><b>Block element - div</b> 
+     <p style="color:rgb(114, 14, 229); background-color: pink;"><b>< div> < /div></b></p>
+           <p>Displays content in new line</p>
+            <p>Para1</p>
+            <p>Para2</p>
+        </li>
+    </ol>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>INPUT & FORMS</u></h2>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>Single tag - < input type="type of text to take input" /> value = "default text" / ></b></p>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>Double tag - < form>< /form> -WRAPPER FOR INPUT TAGS</b></p>
+    <p><b>Type-</b> </p>
+    <ul>
+        <li>text : <input type="text" value="Enter your name:" /></li>
+        <br/>
+        <li>password : <input type="password" /></li>
+        <br/>
+        <li>date : <input type="date" /></li>
+        <br/>    
+        <li>range : <input type="range" /></li>
+        <br/>
+        <li>file : <input type="file" /></li>
+        <br/>
+        <li>checkbox : <input type="checkbox" /><input type="checkbox" /></li>
+        <br/>
+        <li>radio : <input type="radio" /><input type="radio" /></li>
+        <br/>
+        <li>submit : <input type="submit" /></li>
+
+    </ul>
+    <p><b>Text area</b> -  <textarea rows="3" cols="50">Enter content</textarea></p>
+    <hr/>
+    <h2 style="color:rgb(2, 123, 30)"><u>iFRAMES</u></h2>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b>Double tag -  < iframe src="website link" >text< / iframe></iframe></b></p>
+    <p>To emebedd any other website to the current website</p>
+    <p>Dsiplays the website in the current website</p>
+    <p>Some websites dont allow to embedd their websites.</p>
+<hr/>
+
+
+
+    <h2 style="color:rgb(2, 123, 30)"><u></u></h2>
+    <p style="color:rgb(114, 14, 229); background-color: pink;"><b></b></p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "python-envs.pythonProjects": [
+    {
+      "path": "my_project.py",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ],
+  "livePreview.defaultPreviewPath": "/first_html.html"
+}
