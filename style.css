@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+body > h1 {
+    margin: 0;
+    padding: 40px 20px 10px;
+    text-align: center;
+    background-color: #1e293b;
+    color: white;
+}
+
+body > h1 + p {
+    margin: 0;
+    padding: 0 20px 40px;
+    text-align: center;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+h2 {
+    margin: 0;
+    padding: 35px 20px 10px;
+    color: #1e293b;
+}
+
+h2, 
+h2 + p,
+h2 + ul,
+h2 ~ h3,
+h2 ~ p,
+form {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 + p {
+    padding: 0 20px 20px;
+}
+
+ul {
+    padding: 0 20px 20px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: translateY(-4px);
+}
+
+h3 {
+    background-color: white;
+    padding: 15px 20px 5px;
+    margin-bottom: 0;
+}
+
+h3 + p {
+    background-color: white;
+    padding: 0 20px 20px;
+    margin-top: 0;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    body > h1 {
+        font-size: 28px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
