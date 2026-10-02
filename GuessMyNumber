@@ -1,0 +1,42 @@
+let rand=(Math.floor(Math.random()*(Math.floor(Math.random()*100))+1)+1);
+let max_attempts=Math.floor(Math.random()*10)+1;
+let count=0,guess,found=false;
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+function play()
+{
+    if(count>=max_attempts || found==true)
+    {
+        rl.close();
+        return;
+    }
+
+    count++;
+
+    rl.question("Guess the number:  ", (gues) => {
+
+        const guess=Number(gues);
+
+        if(guess==rand)
+        {
+            console.log("You guessed it right!!");
+            found=true;
+        }
+        else if(guess>rand)
+            console.log("High");
+        else
+            console.log("Low");
+
+        console.log("You have "+(max_attempts-count)+" attempts left!");
+
+        play();
+    });
+}
+
+play();
